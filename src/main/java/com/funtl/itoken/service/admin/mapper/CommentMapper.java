@@ -1,5 +1,6 @@
 package com.funtl.itoken.service.admin.mapper;
 
+
 import com.funtl.itoken.service.admin.domain.Comment;
 import tk.mybatis.mapper.common.Mapper;
 

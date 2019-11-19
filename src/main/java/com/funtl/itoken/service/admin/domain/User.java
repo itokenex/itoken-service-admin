@@ -1,6 +1,7 @@
 package com.funtl.itoken.service.admin.domain;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Table;
 
 @Table(name = "user")
 public class User {

@@ -1,6 +1,8 @@
 package com.funtl.itoken.service.admin.controller;
 
-import com.funtl.itoken.commom.BaseResult;
+
+
+import com.funtl.itoken.service.admin.BaseResult;
 import com.funtl.itoken.service.admin.domain.User;
 import com.funtl.itoken.service.admin.service.AdminService;
 import com.google.common.collect.Lists;
@@ -9,8 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import sun.awt.ModalExclude;
-import zipkin2.Call;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +25,9 @@ public class LoginController {
     public BaseResult login(String accountId, String name, Model model){
 
         //BaseResult baseResult=new BaseResult();
+        System.out.println("accountId:"+accountId);
+        System.out.println("name:"+name);
+
         BaseResult baseResult = checkLogin(accountId, name);
         if(baseResult!=null){
             return baseResult;

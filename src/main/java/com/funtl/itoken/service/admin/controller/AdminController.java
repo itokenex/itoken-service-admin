@@ -1,13 +1,13 @@
 package com.funtl.itoken.service.admin.controller;
 
+
 import com.funtl.itoken.service.admin.domain.User;
 import com.funtl.itoken.service.admin.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import tk.mybatis.mapper.entity.Example;
+
 
 @Controller
 
